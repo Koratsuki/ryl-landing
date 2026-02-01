@@ -4,22 +4,22 @@ A beautiful, production-ready landing page built with Astro for a company specia
 
 ## ✨ Features
 
-- **Modern Astro Framework**: Fast, optimized, and SEO-friendly
-- **Fully Responsive**: Mobile-first design that works on all devices
-- **Elegant Design**: Natural color palette with smooth animations
-- **SEO Optimized**: Complete meta tags, Open Graph, and Twitter Cards
-- **Performance Focused**: Optimized images and minimal JavaScript
-- **Accessible**: Semantic HTML with proper ARIA labels
-- **Pure CSS**: No external frameworks, just clean custom styles
+- **Modern Astro Framework**: Fast, optimized, and SEO-friendly.
+- **Multi-language Support (i18n)**: Fully localized in English and Spanish with a dedicated `LanguageSwitcher`.
+- **Persistent Dark Mode**: Supports light and dark themes with system preference detection and `localStorage` persistence.
+- **Elegant Design**: Natural color palette with smooth animations and polished UI components.
+- **Automated Year Footer**: Copyright year updates automatically via Astro frontmatter.
+- **Fully Responsive**: Mobile-first design implemented with custom CSS and Tailwind CSS integration.
+- **SEO Optimized**: Complete meta tags, Open Graph, and Twitter Cards for both languages.
 
 ## 🎨 Sections
 
-1. **Hero Section**: Eye-catching introduction with call-to-action
-2. **About Section**: Company mission and values with feature highlights
-3. **Products Section**: Showcase of 4 main product categories
-4. **Testimonials Section**: Customer reviews and social proof
-5. **Contact Section**: Contact form and business information
-6. **Footer**: Navigation, newsletter signup, and social links
+1. **Hero Section**: Eye-catching introduction with language-specific CTAs.
+2. **About Section**: Company mission and values with feature highlights.
+3. **Products Section**: Showcase of 4 main product categories.
+4. **Testimonials Section**: Customer reviews and social proof.
+5. **Contact Section**: Contact form and business information.
+6. **Footer**: Navigation, newsletter signup, social links, and automated copyright year.
 
 ## 🚀 Getting Started
 
@@ -31,22 +31,26 @@ A beautiful, production-ready landing page built with Astro for a company specia
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd ryl-landing
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Start the development server:
+1. Start the development server:
+
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit:
+1. Open your browser and visit:
+
 ```
 http://localhost:4321
 ```
@@ -80,12 +84,23 @@ npm run preview
 │   │   ├── Products.astro
 │   │   ├── Testimonials.astro
 │   │   ├── Contact.astro
-│   │   └── Footer.astro
+│   │   ├── Footer.astro
+│   │   ├── ThemeToggle.astro       # NEW: Handles theme switching
+│   │   └── LanguageSwitcher.astro  # NEW: Handles i18n routing
+│   ├── i18n/
+│   │   ├── locales/
+│   │   │   ├── en.json            # English translations
+│   │   │   └── es.json            # Spanish translations
+│   │   └── utils.ts               # Translation helper logic
+│   ├── layouts/
+│   │   └── BaseLayout.astro       # Master layout with theme/i18n scripts
 │   ├── styles/
-│   │   └── global.css
+│   │   └── global.css             # Design system & theme variables
 │   └── pages/
-│       └── index.astro
-├── astro.config.mjs
+│       ├── index.astro            # Root (English)
+│       └── es/
+│           └── index.astro        # Spanish localization
+├── astro.config.mjs               # Configuration (Dev Toolbar disabled)
 ├── package.json
 └── tsconfig.json
 ```
@@ -94,11 +109,11 @@ npm run preview
 
 ### Color Palette
 
-- **Primary**: `#2d5f3f` (Forest Green)
+- **Primary**: `#2d5f3f` (Forest Green) / `#8b9d77` (Dark Mode Sage)
 - **Secondary**: `#d4a574` (Warm Beige)
-- **Accent**: `#8b9d77` (Sage Green)
-- **Background**: `#faf9f6` (Ivory)
-- **Text**: `#2c2c2c` (Charcoal)
+- **Accent**: `#8b9d77` (Sage Green) / `#2d5f3f` (Dark Mode Forest)
+- **Background**: `#faf9f6` (Ivory) / `#1a1a1a` (Dark Gray)
+- **Text**: `#2c2c2c` (Charcoal) / `#f0f0f0` (Off-white)
 
 ### Typography
 
@@ -107,32 +122,28 @@ npm run preview
 
 ## 🔧 Customization
 
-### Update Company Information
+### Update Multi-language Content
 
-Edit the content in each component file located in `src/components/`:
-- Company name, tagline, and mission in `About.astro`
-- Product descriptions in `Products.astro`
-- Testimonials in `Testimonials.astro`
-- Contact information in `Contact.astro` and `Footer.astro`
+Instead of editing `.astro` files directly for text, update the JSON files in `src/i18n/locales/`:
+
+- `en.json` for English content
+- `es.json` for Spanish content
 
 ### Update Images
 
-Replace the Unsplash URLs in the components with your own images. Look for:
+Replace the Unsplash URLs in the components with your own images:
+
 - Hero background in `Hero.astro`
 - Product images in `Products.astro`
 - Testimonial avatars in `Testimonials.astro`
 
 ### Update SEO
 
-Edit the meta tags in `src/pages/index.astro`:
-- Site title
-- Description
-- Keywords
-- Open Graph image
+SEO settings are handled per-page in `src/pages/index.astro` and `src/pages/es/index.astro`.
 
-### Update Colors
+### Update Theme Variables
 
-Modify the CSS variables in `src/styles/global.css` under the `:root` selector.
+Modify the CSS variables in `src/styles/global.css` under the `:root` and `:root[data-theme="dark"]` selectors.
 
 ## 📱 Browser Support
 
@@ -147,31 +158,27 @@ Modify the CSS variables in `src/styles/global.css` under the `:root` selector.
 This Astro project can be deployed to various platforms:
 
 ### Netlify
+
 ```bash
 npm run build
 # Deploy the dist/ folder
 ```
 
 ### Vercel
+
 ```bash
 npm run build
 # Deploy the dist/ folder
 ```
 
 ### GitHub Pages
+
 Configure `astro.config.mjs` with your site URL and deploy the `dist/` folder.
 
 ## 📄 License
 
 This project is open source and available for commercial use.
 
-## 🤝 Support
-
-For questions or support, please contact:
-- Email: hello@naturesessence.com
-- Website: [Your Website]
-
 ---
 
 Built with ❤️ using [Astro](https://astro.build) - The web framework for content-driven websites.
-
