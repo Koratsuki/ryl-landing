@@ -1,0 +1,176 @@
+{
+    "nav": {
+        "about": "About",
+        "products": "Products",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Discover Nature's Purest Essence",
+        "subtitle": "Premium natural food products, aromatic oils, and beauty treatments sourced from around the world",
+        "exploreBtn": "Explore Products",
+        "contactBtn": "Get in Touch"
+    },
+    "about": {
+        "title": "Our Mission",
+        "subtitle": "Bringing the finest natural products from around the world to your doorstep",
+        "heading": "Nature's Essence - Your Trusted Partner",
+        "paragraph1": "At Nature's Essence, we believe in the power of nature to nourish, heal, and beautify. For over a decade, we've been sourcing the finest natural food products, aromatic oils, and beauty treatments from sustainable farms and ethical producers worldwide.",
+        "paragraph2": "Our commitment goes beyond just importing products. We carefully select each item, ensuring it meets our rigorous standards for purity, sustainability, and effectiveness. Every product tells a story of tradition, craftsmanship, and respect for nature.",
+        "stats": {
+            "years": "Years Experience",
+            "products": "Premium Products",
+            "countries": "Countries Sourced"
+        },
+        "features": {
+            "natural": {
+                "title": "100% Natural",
+                "description": "All our products are sourced from natural, organic ingredients with no artificial additives or preservatives."
+            },
+            "sustainable": {
+                "title": "Sustainably Sourced",
+                "description": "We partner with ethical suppliers who practice sustainable farming and fair trade principles."
+            },
+            "quality": {
+                "title": "Premium Quality",
+                "description": "Each product undergoes rigorous quality testing to ensure you receive only the finest nature has to offer."
+            },
+            "eco": {
+                "title": "Eco-Friendly",
+                "description": "Our packaging is recyclable and biodegradable, minimizing our environmental footprint."
+            }
+        }
+    },
+    "products": {
+        "title": "Our Premium Products",
+        "subtitle": "Discover our carefully curated collection of natural wellness products",
+        "learnMore": "Learn More",
+        "categories": {
+            "food": {
+                "title": "Natural Food Products",
+                "description": "Organic superfoods, ancient grains, and nutrient-rich ingredients sourced from pristine farms worldwide. From quinoa to chia seeds, each product is carefully selected for maximum nutritional value.",
+                "features": [
+                    "100% Organic & Non-GMO",
+                    "Rich in Nutrients",
+                    "Ethically Sourced"
+                ]
+            },
+            "oils": {
+                "title": "Aromatic Essential Oils",
+                "description": "Pure, therapeutic-grade essential oils extracted from flowers, herbs, and botanicals. Perfect for aromatherapy, meditation, and creating a peaceful atmosphere in your home.",
+                "features": [
+                    "100% Pure & Therapeutic",
+                    "Steam Distilled",
+                    "No Synthetic Additives"
+                ]
+            },
+            "beauty": {
+                "title": "Natural Beauty Care",
+                "description": "Luxurious skincare and beauty products formulated with botanical extracts and natural ingredients. Nourish your skin with the power of nature's finest elements.",
+                "features": [
+                    "Plant-Based Formulas",
+                    "Cruelty-Free",
+                    "Dermatologist Tested"
+                ]
+            },
+            "wellness": {
+                "title": "Wellness Treatments",
+                "description": "Holistic wellness solutions including herbal supplements, natural remedies, and therapeutic treatments designed to support your overall health and vitality.",
+                "features": [
+                    "Herbal & Natural",
+                    "Scientifically Backed",
+                    "Quality Certified"
+                ]
+            }
+        }
+    },
+    "testimonials": {
+        "title": "What Our Customers Say",
+        "subtitle": "Join thousands of satisfied customers who trust Nature's Essence",
+        "reviews": [
+            {
+                "text": "I've been using Nature's Essence products for over a year now, and the quality is unmatched. Their essential oils are pure and potent, and I love knowing they're sustainably sourced. Highly recommend!",
+                "name": "Sarah Mitchell",
+                "role": "Wellness Enthusiast"
+            },
+            {
+                "text": "The natural food products have transformed my kitchen! Everything from their quinoa to their superfoods is top-quality. I appreciate their commitment to organic and ethical sourcing.",
+                "name": "Michael Chen",
+                "role": "Professional Chef"
+            },
+            {
+                "text": "As someone with sensitive skin, finding natural beauty products that actually work has been a challenge. Nature's Essence exceeded my expectations. My skin has never looked better!",
+                "name": "Emily Rodriguez",
+                "role": "Beauty Blogger"
+            },
+            {
+                "text": "Outstanding customer service and exceptional products. I've recommended Nature's Essence to all my friends and family. Their aromatherapy oils have become an essential part of my daily routine.",
+                "name": "David Thompson",
+                "role": "Yoga Instructor"
+            },
+            {
+                "text": "The quality and purity of their products are evident from the first use. I love that they're transparent about their sourcing and committed to sustainability. A brand I can trust completely.",
+                "name": "Lisa Anderson",
+                "role": "Holistic Practitioner"
+            },
+            {
+                "text": "From their packaging to their products, everything screams quality and care for the environment. Nature's Essence has become my go-to for all things natural and wellness-related.",
+                "name": "James Wilson",
+                "role": "Environmental Advocate"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "subject": "Subject",
+            "message": "Message",
+            "namePlaceholder": "John Doe",
+            "emailPlaceholder": "john@example.com",
+            "phonePlaceholder": "+1 (555) 123-4567",
+            "subjectPlaceholder": "Product Inquiry",
+            "messagePlaceholder": "Tell us how we can help you...",
+            "submit": "Send Message",
+            "required": "*",
+            "successMessage": "Thank you for your message! We will get back to you soon.",
+            "captchaProtected": "This site is protected by reCAPTCHA"
+        },
+        "info": {
+            "visit": {
+                "title": "Visit Us",
+                "address": "123 Wellness Avenue\nNatural District, ND 12345\nUnited States"
+            },
+            "email": {
+                "title": "Email Us"
+            },
+            "call": {
+                "title": "Call Us",
+                "hours": "Mon - Fri: 9AM - 6PM EST"
+            },
+            "hours": {
+                "title": "Business Hours",
+                "schedule": "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 4:00 PM\nSunday: Closed"
+            }
+        }
+    },
+    "footer": {
+        "description": "Bringing the finest natural products from around the world to your doorstep. Quality, sustainability, and wellness in every product.",
+        "quickLinks": "Quick Links",
+        "productsTitle": "Products",
+        "newsletter": {
+            "title": "Newsletter",
+            "description": "Subscribe to get special offers and updates",
+            "placeholder": "Your email address",
+            "submit": "Subscribe",
+            "successMessage": "Thank you for subscribing to our newsletter!"
+        },
+        "copyright": "Nature's Essence. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy"
+    }
+}

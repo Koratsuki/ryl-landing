@@ -1,0 +1,175 @@
+---
+// Testimonials Component
+---
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials-header text-center">
+      <h2>What Our Customers Say</h2>
+      <p class="section-subtitle">Join thousands of satisfied customers who trust Nature's Essence</p>
+    </div>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"I've been using Nature's Essence products for over a year now, and the quality is unmatched. Their essential oils are pure and potent, and I love knowing they're sustainably sourced. Highly recommend!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Mitchell" />
+          <div class="author-info">
+            <h4>Sarah Mitchell</h4>
+            <p>Wellness Enthusiast</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The natural food products have transformed my kitchen! Everything from their quinoa to their superfoods is top-quality. I appreciate their commitment to organic and ethical sourcing."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=13" alt="Michael Chen" />
+          <div class="author-info">
+            <h4>Michael Chen</h4>
+            <p>Professional Chef</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"As someone with sensitive skin, finding natural beauty products that actually work has been a challenge. Nature's Essence exceeded my expectations. My skin has never looked better!"</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Emily Rodriguez" />
+          <div class="author-info">
+            <h4>Emily Rodriguez</h4>
+            <p>Beauty Blogger</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Outstanding customer service and exceptional products. I've recommended Nature's Essence to all my friends and family. Their aromatherapy oils have become an essential part of my daily routine."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=33" alt="David Thompson" />
+          <div class="author-info">
+            <h4>David Thompson</h4>
+            <p>Yoga Instructor</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The quality and purity of their products are evident from the first use. I love that they're transparent about their sourcing and committed to sustainability. A brand I can trust completely."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=9" alt="Lisa Anderson" />
+          <div class="author-info">
+            <h4>Lisa Anderson</h4>
+            <p>Holistic Practitioner</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"From their packaging to their products, everything screams quality and care for the environment. Nature's Essence has become my go-to for all things natural and wellness-related."</p>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/150?img=14" alt="James Wilson" />
+          <div class="author-info">
+            <h4>James Wilson</h4>
+            <p>Environmental Advocate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    background: var(--color-white);
+  }
+  
+  .testimonials-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .testimonial-card {
+    background: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-accent);
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--color-primary);
+  }
+  
+  .stars {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 2px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+  }
+  
+  .author-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .author-info p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

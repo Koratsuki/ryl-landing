@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5f3f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b9d77;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M50 10 Q30 30 30 50 Q30 70 50 90 Q70 70 70 50 Q70 30 50 10 Z" fill="url(#leafGradient)"/>
+  <path d="M50 20 Q40 35 40 50 Q40 65 50 80" stroke="#faf9f6" stroke-width="2" fill="none"/>
+</svg>

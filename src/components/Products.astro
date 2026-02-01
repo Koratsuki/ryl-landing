@@ -1,0 +1,197 @@
+---
+// Products Component
+---
+
+<section class="products" id="products">
+  <div class="container">
+    <div class="products-header text-center">
+      <h2>Our Premium Products</h2>
+      <p class="section-subtitle">Discover our carefully curated collection of natural wellness products</p>
+    </div>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Natural Food Products" />
+          <div class="product-overlay">
+            <a href="#contact" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>Natural Food Products</h3>
+          <p>Organic superfoods, ancient grains, and nutrient-rich ingredients sourced from pristine farms worldwide. From quinoa to chia seeds, each product is carefully selected for maximum nutritional value.</p>
+          <ul class="product-features">
+            <li>✓ 100% Organic & Non-GMO</li>
+            <li>✓ Rich in Nutrients</li>
+            <li>✓ Ethically Sourced</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80" alt="Essential Oils" />
+          <div class="product-overlay">
+            <a href="#contact" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>Aromatic Essential Oils</h3>
+          <p>Pure, therapeutic-grade essential oils extracted from flowers, herbs, and botanicals. Perfect for aromatherapy, meditation, and creating a peaceful atmosphere in your home.</p>
+          <ul class="product-features">
+            <li>✓ 100% Pure & Therapeutic</li>
+            <li>✓ Steam Distilled</li>
+            <li>✓ No Synthetic Additives</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80" alt="Beauty Products" />
+          <div class="product-overlay">
+            <a href="#contact" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>Natural Beauty Care</h3>
+          <p>Luxurious skincare and beauty products formulated with botanical extracts and natural ingredients. Nourish your skin with the power of nature's finest elements.</p>
+          <ul class="product-features">
+            <li>✓ Plant-Based Formulas</li>
+            <li>✓ Cruelty-Free</li>
+            <li>✓ Dermatologist Tested</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&q=80" alt="Wellness Treatments" />
+          <div class="product-overlay">
+            <a href="#contact" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>Wellness Treatments</h3>
+          <p>Holistic wellness solutions including herbal supplements, natural remedies, and therapeutic treatments designed to support your overall health and vitality.</p>
+          <ul class="product-features">
+            <li>✓ Herbal & Natural</li>
+            <li>✓ Scientifically Backed</li>
+            <li>✓ Quality Certified</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .products {
+    background: var(--color-background);
+  }
+  
+  .products-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .product-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .product-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .product-card:hover .product-image img {
+    transform: scale(1.1);
+  }
+  
+  .product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 95, 63, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+  }
+  
+  .product-card:hover .product-overlay {
+    opacity: 1;
+  }
+  
+  .product-content {
+    padding: var(--spacing-md);
+  }
+  
+  .product-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+  }
+  
+  .product-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .product-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-features li {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+      height: 200px;
+    }
+  }
+</style>

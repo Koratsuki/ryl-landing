@@ -1,0 +1,176 @@
+{
+    "nav": {
+        "about": "Acerca de",
+        "products": "Productos",
+        "testimonials": "Testimonios",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Descubre la Esencia Más Pura de la Naturaleza",
+        "subtitle": "Productos alimenticios naturales premium, aceites aromáticos y tratamientos de belleza de todo el mundo",
+        "exploreBtn": "Explorar Productos",
+        "contactBtn": "Contáctanos"
+    },
+    "about": {
+        "title": "Nuestra Misión",
+        "subtitle": "Llevando los mejores productos naturales del mundo a tu puerta",
+        "heading": "Nature's Essence - Tu Socio de Confianza",
+        "paragraph1": "En Nature's Essence, creemos en el poder de la naturaleza para nutrir, sanar y embellecer. Durante más de una década, hemos estado obteniendo los mejores productos alimenticios naturales, aceites aromáticos y tratamientos de belleza de granjas sostenibles y productores éticos en todo el mundo.",
+        "paragraph2": "Nuestro compromiso va más allá de simplemente importar productos. Seleccionamos cuidadosamente cada artículo, asegurándonos de que cumpla con nuestros rigurosos estándares de pureza, sostenibilidad y eficacia. Cada producto cuenta una historia de tradición, artesanía y respeto por la naturaleza.",
+        "stats": {
+            "years": "Años de Experiencia",
+            "products": "Productos Premium",
+            "countries": "Países de Origen"
+        },
+        "features": {
+            "natural": {
+                "title": "100% Natural",
+                "description": "Todos nuestros productos provienen de ingredientes naturales y orgánicos sin aditivos artificiales ni conservantes."
+            },
+            "sustainable": {
+                "title": "Origen Sostenible",
+                "description": "Nos asociamos con proveedores éticos que practican la agricultura sostenible y los principios de comercio justo."
+            },
+            "quality": {
+                "title": "Calidad Premium",
+                "description": "Cada producto se somete a rigurosas pruebas de calidad para garantizar que recibas solo lo mejor que la naturaleza tiene para ofrecer."
+            },
+            "eco": {
+                "title": "Ecológico",
+                "description": "Nuestro empaque es reciclable y biodegradable, minimizando nuestra huella ambiental."
+            }
+        }
+    },
+    "products": {
+        "title": "Nuestros Productos Premium",
+        "subtitle": "Descubre nuestra colección cuidadosamente seleccionada de productos naturales para el bienestar",
+        "learnMore": "Más Información",
+        "categories": {
+            "food": {
+                "title": "Productos Alimenticios Naturales",
+                "description": "Superalimentos orgánicos, granos ancestrales e ingredientes ricos en nutrientes de granjas prístinas de todo el mundo. Desde quinoa hasta semillas de chía, cada producto es cuidadosamente seleccionado por su máximo valor nutricional.",
+                "features": [
+                    "100% Orgánico y Sin OGM",
+                    "Rico en Nutrientes",
+                    "Origen Ético"
+                ]
+            },
+            "oils": {
+                "title": "Aceites Esenciales Aromáticos",
+                "description": "Aceites esenciales puros de grado terapéutico extraídos de flores, hierbas y plantas. Perfectos para aromaterapia, meditación y crear una atmósfera pacífica en tu hogar.",
+                "features": [
+                    "100% Puro y Terapéutico",
+                    "Destilado al Vapor",
+                    "Sin Aditivos Sintéticos"
+                ]
+            },
+            "beauty": {
+                "title": "Cuidado de Belleza Natural",
+                "description": "Productos lujosos para el cuidado de la piel y belleza formulados con extractos botánicos e ingredientes naturales. Nutre tu piel con el poder de los mejores elementos de la naturaleza.",
+                "features": [
+                    "Fórmulas a Base de Plantas",
+                    "Libre de Crueldad Animal",
+                    "Probado Dermatológicamente"
+                ]
+            },
+            "wellness": {
+                "title": "Tratamientos de Bienestar",
+                "description": "Soluciones holísticas de bienestar que incluyen suplementos herbales, remedios naturales y tratamientos terapéuticos diseñados para apoyar tu salud y vitalidad general.",
+                "features": [
+                    "Herbal y Natural",
+                    "Respaldado Científicamente",
+                    "Certificado de Calidad"
+                ]
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Lo Que Dicen Nuestros Clientes",
+        "subtitle": "Únete a miles de clientes satisfechos que confían en Nature's Essence",
+        "reviews": [
+            {
+                "text": "He estado usando productos de Nature's Essence durante más de un año, y la calidad es inigualable. Sus aceites esenciales son puros y potentes, y me encanta saber que son de origen sostenible. ¡Muy recomendable!",
+                "name": "Sarah Mitchell",
+                "role": "Entusiasta del Bienestar"
+            },
+            {
+                "text": "¡Los productos alimenticios naturales han transformado mi cocina! Todo, desde su quinoa hasta sus superalimentos, es de primera calidad. Aprecio su compromiso con el origen orgánico y ético.",
+                "name": "Michael Chen",
+                "role": "Chef Profesional"
+            },
+            {
+                "text": "Como alguien con piel sensible, encontrar productos de belleza naturales que realmente funcionen ha sido un desafío. Nature's Essence superó mis expectativas. ¡Mi piel nunca se ha visto mejor!",
+                "name": "Emily Rodriguez",
+                "role": "Blogger de Belleza"
+            },
+            {
+                "text": "Servicio al cliente excepcional y productos extraordinarios. He recomendado Nature's Essence a todos mis amigos y familiares. Sus aceites de aromaterapia se han convertido en una parte esencial de mi rutina diaria.",
+                "name": "David Thompson",
+                "role": "Instructor de Yoga"
+            },
+            {
+                "text": "La calidad y pureza de sus productos son evidentes desde el primer uso. Me encanta que sean transparentes sobre su origen y comprometidos con la sostenibilidad. Una marca en la que puedo confiar completamente.",
+                "name": "Lisa Anderson",
+                "role": "Practicante Holística"
+            },
+            {
+                "text": "Desde su empaque hasta sus productos, todo refleja calidad y cuidado por el medio ambiente. Nature's Essence se ha convertido en mi opción preferida para todo lo relacionado con lo natural y el bienestar.",
+                "name": "James Wilson",
+                "role": "Defensor Ambiental"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "subtitle": "¿Tienes preguntas? Nos encantaría saber de ti. Envíanos un mensaje y te responderemos lo antes posible.",
+        "form": {
+            "name": "Nombre Completo",
+            "email": "Correo Electrónico",
+            "phone": "Número de Teléfono",
+            "subject": "Asunto",
+            "message": "Mensaje",
+            "namePlaceholder": "Juan Pérez",
+            "emailPlaceholder": "juan@ejemplo.com",
+            "phonePlaceholder": "+34 (555) 123-4567",
+            "subjectPlaceholder": "Consulta de Producto",
+            "messagePlaceholder": "Cuéntanos cómo podemos ayudarte...",
+            "submit": "Enviar Mensaje",
+            "required": "*",
+            "successMessage": "¡Gracias por tu mensaje! Te responderemos pronto.",
+            "captchaProtected": "Este sitio está protegido por reCAPTCHA"
+        },
+        "info": {
+            "visit": {
+                "title": "Visítanos",
+                "address": "123 Avenida Bienestar\nDistrito Natural, ND 12345\nEstados Unidos"
+            },
+            "email": {
+                "title": "Envíanos un Email"
+            },
+            "call": {
+                "title": "Llámanos",
+                "hours": "Lun - Vie: 9AM - 6PM EST"
+            },
+            "hours": {
+                "title": "Horario de Atención",
+                "schedule": "Lunes - Viernes: 9:00 AM - 6:00 PM\nSábado: 10:00 AM - 4:00 PM\nDomingo: Cerrado"
+            }
+        }
+    },
+    "footer": {
+        "description": "Llevando los mejores productos naturales del mundo a tu puerta. Calidad, sostenibilidad y bienestar en cada producto.",
+        "quickLinks": "Enlaces Rápidos",
+        "productsTitle": "Productos",
+        "newsletter": {
+            "title": "Boletín",
+            "description": "Suscríbete para recibir ofertas especiales y actualizaciones",
+            "placeholder": "Tu correo electrónico",
+            "submit": "Suscribirse",
+            "successMessage": "¡Gracias por suscribirte a nuestro boletín!"
+        },
+        "copyright": "Nature's Essence. Todos los derechos reservados.",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio",
+        "cookies": "Política de Cookies"
+    }
+}

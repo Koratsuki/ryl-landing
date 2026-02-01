@@ -1,0 +1,191 @@
+---
+// About Component
+---
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-header text-center">
+      <h2>Our Mission</h2>
+      <p class="section-subtitle">Bringing the finest natural products from around the world to your doorstep</p>
+    </div>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Nature's Essence - Your Trusted Partner</h3>
+        <p>At Nature's Essence, we believe in the power of nature to nourish, heal, and beautify. For over a decade, we've been sourcing the finest natural food products, aromatic oils, and beauty treatments from sustainable farms and ethical producers worldwide.</p>
+        <p>Our commitment goes beyond just importing products. We carefully select each item, ensuring it meets our rigorous standards for purity, sustainability, and effectiveness. Every product tells a story of tradition, craftsmanship, and respect for nature.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Premium Products</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Countries Sourced</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h4>100% Natural</h4>
+          <p>All our products are sourced from natural, organic ingredients with no artificial additives or preservatives.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4>Sustainably Sourced</h4>
+          <p>We partner with ethical suppliers who practice sustainable farming and fair trade principles.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h4>Premium Quality</h4>
+          <p>Each product undergoes rigorous quality testing to ensure you receive only the finest nature has to offer.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💚</div>
+          <h4>Eco-Friendly</h4>
+          <p>Our packaging is recyclable and biodegradable, minimizing our environmental footprint.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    background: var(--color-white);
+  }
+  
+  .about-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+  }
+  
+  .about-text h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .stat {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+  }
+  
+  .stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .feature-card {
+    background: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .feature-card h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 968px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    
+    .about-stats {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-sm);
+    }
+    
+    .stat {
+      padding: var(--spacing-sm);
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .about-features {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

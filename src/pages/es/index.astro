@@ -1,0 +1,1123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+import Header from '../../components/Header.astro';
+
+const lang = 'es';
+const t = useTranslations(lang);
+
+const pageTitle = "Nature's Essence - Premium Natural Wellness Products";
+const pageDescription = t('hero.subtitle');
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} lang={lang}>
+  <Header t={t} lang={lang} />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title fade-in">{t('hero.title')}</h1>
+          <p class="hero-subtitle fade-in">{t('hero.subtitle')}</p>
+          <div class="hero-buttons fade-in">
+            <a href="#products" class="btn btn-primary">{t('hero.exploreBtn')}</a>
+            <a href="#contact" class="btn btn-outline">{t('hero.contactBtn')}</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-header text-center">
+          <h2>{t('about.title')}</h2>
+          <p class="section-subtitle">{t('about.subtitle')}</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <h3>{t('about.heading')}</h3>
+            <p>{t('about.paragraph1')}</p>
+            <p>{t('about.paragraph2')}</p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">{t('about.stats.years')}</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">{t('about.stats.products')}</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">{t('about.stats.countries')}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-features">
+            <div class="feature-card">
+              <div class="feature-icon">🌱</div>
+              <h4>{t('about.features.natural.title')}</h4>
+              <p>{t('about.features.natural.description')}</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">🌍</div>
+              <h4>{t('about.features.sustainable.title')}</h4>
+              <p>{t('about.features.sustainable.description')}</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">✨</div>
+              <h4>{t('about.features.quality.title')}</h4>
+              <p>{t('about.features.quality.description')}</p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">💚</div>
+              <h4>{t('about.features.eco.title')}</h4>
+              <p>{t('about.features.eco.description')}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products-header text-center">
+          <h2>{t('products.title')}</h2>
+          <p class="section-subtitle">{t('products.subtitle')}</p>
+        </div>
+        
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt={t('products.categories.food.title')} />
+              <div class="product-overlay">
+                <a href="#contact" class="btn btn-primary">{t('products.learnMore')}</a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3>{t('products.categories.food.title')}</h3>
+              <p>{t('products.categories.food.description')}</p>
+              <ul class="product-features">
+                {t('products.categories.food.features').map((feature: string) => (
+                  <li>✓ {feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80" alt={t('products.categories.oils.title')} />
+              <div class="product-overlay">
+                <a href="#contact" class="btn btn-primary">{t('products.learnMore')}</a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3>{t('products.categories.oils.title')}</h3>
+              <p>{t('products.categories.oils.description')}</p>
+              <ul class="product-features">
+                {t('products.categories.oils.features').map((feature: string) => (
+                  <li>✓ {feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80" alt={t('products.categories.beauty.title')} />
+              <div class="product-overlay">
+                <a href="#contact" class="btn btn-primary">{t('products.learnMore')}</a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3>{t('products.categories.beauty.title')}</h3>
+              <p>{t('products.categories.beauty.description')}</p>
+              <ul class="product-features">
+                {t('products.categories.beauty.features').map((feature: string) => (
+                  <li>✓ {feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&q=80" alt={t('products.categories.wellness.title')} />
+              <div class="product-overlay">
+                <a href="#contact" class="btn btn-primary">{t('products.learnMore')}</a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3>{t('products.categories.wellness.title')}</h3>
+              <p>{t('products.categories.wellness.description')}</p>
+              <ul class="product-features">
+                {t('products.categories.wellness.features').map((feature: string) => (
+                  <li>✓ {feature}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header text-center">
+          <h2>{t('testimonials.title')}</h2>
+          <p class="section-subtitle">{t('testimonials.subtitle')}</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          {t('testimonials.reviews').map((review: any, index: number) => (
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">{review.text}</p>
+              <div class="testimonial-author">
+                <img src={`https://i.pravatar.cc/150?img=${[1, 13, 5, 33, 9, 14][index]}`} alt={review.name} />
+                <div class="author-info">
+                  <h4>{review.name}</h4>
+                  <p>{review.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-header text-center">
+          <h2>{t('contact.title')}</h2>
+          <p class="section-subtitle">{t('contact.subtitle')}</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">{t('contact.form.name')} {t('contact.form.required')}</label>
+                <input type="text" id="name" name="name" required placeholder={t('contact.form.namePlaceholder')} />
+              </div>
+              
+              <div class="form-group">
+                <label for="email">{t('contact.form.email')} {t('contact.form.required')}</label>
+                <input type="email" id="email" name="email" required placeholder={t('contact.form.emailPlaceholder')} />
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">{t('contact.form.phone')}</label>
+                <input type="tel" id="phone" name="phone" placeholder={t('contact.form.phonePlaceholder')} />
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">{t('contact.form.subject')} {t('contact.form.required')}</label>
+                <input type="text" id="subject" name="subject" required placeholder={t('contact.form.subjectPlaceholder')} />
+              </div>
+              
+              <div class="form-group">
+                <label for="message">{t('contact.form.message')} {t('contact.form.required')}</label>
+                <textarea id="message" name="message" required placeholder={t('contact.form.messagePlaceholder')}></textarea>
+              </div>
+              
+              <div class="recaptcha-notice">
+                <small>🔒 {t('contact.form.captchaProtected')}</small>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">{t('contact.form.submit')}</button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <h4>{t('contact.info.visit.title')}</h4>
+              <p set:html={t('contact.info.visit.address').replace(/\n/g, '<br/>')}></p>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">📧</div>
+              <h4>{t('contact.info.email.title')}</h4>
+              <p><a href="mailto:hello@naturesessence.com">hello@naturesessence.com</a><br/><a href="mailto:support@naturesessence.com">support@naturesessence.com</a></p>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <h4>{t('contact.info.call.title')}</h4>
+              <p><a href="tel:+15551234567">+1 (555) 123-4567</a><br/>{t('contact.info.call.hours')}</p>
+            </div>
+            
+            <div class="info-card">
+              <div class="info-icon">⏰</div>
+              <h4>{t('contact.info.hours.title')}</h4>
+              <p set:html={t('contact.info.hours.schedule').replace(/\n/g, '<br/>')}></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">🌿</span>
+              <span class="logo-text">Nature's Essence</span>
+            </div>
+            <p class="footer-description">{t('footer.description')}</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><svg width="24" height="24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg width="24" height="24" fill="currentColor"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg width="24" height="24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4>{t('footer.quickLinks')}</h4>
+            <ul class="footer-links">
+              <li><a href="#about">{t('nav.about')}</a></li>
+              <li><a href="#products">{t('nav.products')}</a></li>
+              <li><a href="#testimonials">{t('nav.testimonials')}</a></li>
+              <li><a href="#contact">{t('nav.contact')}</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>{t('footer.productsTitle')}</h4>
+            <ul class="footer-links">
+              <li><a href="#products">{t('products.categories.food.title')}</a></li>
+              <li><a href="#products">{t('products.categories.oils.title')}</a></li>
+              <li><a href="#products">{t('products.categories.beauty.title')}</a></li>
+              <li><a href="#products">{t('products.categories.wellness.title')}</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>{t('footer.newsletter.title')}</h4>
+            <p class="newsletter-text">{t('footer.newsletter.description')}</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder={t('footer.newsletter.placeholder')} required />
+              <button type="submit" class="btn btn-secondary">{t('footer.newsletter.submit')}</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 {t('footer.copyright')}</p>
+          <div class="footer-bottom-links">
+            <a href="#">{t('footer.privacy')}</a>
+            <span>•</span>
+            <a href="#">{t('footer.terms')}</a>
+            <span>•</span>
+            <a href="#">{t('footer.cookies')}</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  @import '../../styles/global.css';
+  
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -2;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(45, 95, 63, 0.85) 0%, rgba(139, 157, 119, 0.75) 100%);
+    z-index: -1;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: var(--color-white);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation-delay: 0.2s;
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.8;
+    animation-delay: 0.4s;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-delay: 0.6s;
+  }
+  
+  .hero-buttons .btn-outline {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+    color: var(--color-white);
+    backdrop-filter: blur(10px);
+  }
+  
+  .hero-buttons .btn-outline:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+  }
+  
+  .scroll-indicator span {
+    width: 6px;
+    height: 10px;
+    background: var(--color-white);
+    border-radius: 3px;
+    animation: scroll 2s infinite;
+  }
+  
+  @keyframes scroll {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(15px);
+      opacity: 0.5;
+    }
+  }
+  
+  /* About Section Styles */
+  .about {
+    background: var(--color-white);
+  }
+  
+  .about-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+  }
+  
+  .about-text h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .stat {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+  }
+  
+  .stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .feature-card {
+    background: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .feature-card h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+  
+  /* Products Section Styles */
+  .products {
+    background: var(--color-background);
+  }
+  
+  .products-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .product-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .product-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .product-card:hover .product-image img {
+    transform: scale(1.1);
+  }
+  
+  .product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 95, 63, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+  }
+  
+  .product-card:hover .product-overlay {
+    opacity: 1;
+  }
+  
+  .product-content {
+    padding: var(--spacing-md);
+  }
+  
+  .product-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5rem;
+  }
+  
+  .product-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .product-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-features li {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  /* Testimonials Section Styles */
+  .testimonials {
+    background: var(--color-white);
+  }
+  
+  .testimonials-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .testimonial-card {
+    background: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-accent);
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--color-primary);
+  }
+  
+  .stars {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 2px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+  }
+  
+  .author-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .author-info p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+  
+  /* Contact Section Styles */
+  .contact {
+    background: var(--color-background);
+  }
+  
+  .contact-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+  }
+  
+  .contact-form-wrapper {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(45, 95, 63, 0.1);
+  }
+  
+  .form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .recaptcha-notice {
+    text-align: center;
+    padding: 0.5rem;
+    background: rgba(45, 95, 63, 0.05);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-light);
+  }
+  
+  .contact-form .btn {
+    margin-top: var(--spacing-sm);
+    width: 100%;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .info-card {
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+  }
+  
+  .info-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .info-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .info-card h4 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .info-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  .info-card a {
+    color: var(--color-accent);
+    transition: color var(--transition-fast);
+  }
+  
+  .info-card a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1e4029 100%);
+    color: var(--color-white);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-section h4 {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .logo-icon {
+    font-size: 2rem;
+  }
+  
+  .footer-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: all var(--transition-normal);
+  }
+  
+  .social-links a:hover {
+    background: var(--color-secondary);
+    transform: translateY(-3px);
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all var(--transition-fast);
+    display: inline-block;
+  }
+  
+  .footer-links a:hover {
+    color: var(--color-white);
+    transform: translateX(5px);
+  }
+  
+  .newsletter-text {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-md);
+    font-size: 0.95rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .newsletter-form input {
+    padding: 0.875rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    transition: all var(--transition-fast);
+  }
+  
+  .newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .newsletter-form input:focus {
+    outline: none;
+    border-color: var(--color-white);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .newsletter-form .btn {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-md);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition-fast);
+  }
+  
+  .footer-bottom-links a:hover {
+    color: var(--color-white);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    
+    .about-stats {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-sm);
+    }
+    
+    .stat {
+      padding: var(--spacing-sm);
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+    
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-form-wrapper {
+      padding: var(--spacing-md);
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-md);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      margin-top: 70px;
+      min-height: 90vh;
+    }
+    
+    .hero-content {
+      padding: 1rem;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .scroll-indicator {
+      display: none;
+    }
+    
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+      height: 200px;
+    }
+    
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .about-features {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .footer-bottom-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
+
+<script>
+  // Contact form with reCAPTCHA
+  const contactForm = document.getElementById('contact-form');
+  
+  contactForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    try {
+      // Get reCAPTCHA token
+      const token = await (window as any).grecaptcha.execute('6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', {action: 'submit'});
+      
+      const formData = new FormData(contactForm as HTMLFormElement);
+      const data = Object.fromEntries(formData);
+      
+      // Here you would send to your backend with the token
+      console.log('Form submitted with reCAPTCHA token:', { data, token });
+      
+      alert(document.querySelector('[data-success-message]')?.textContent || 'Thank you for your message! We will get back to you soon.');
+      (contactForm as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('reCAPTCHA error:', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
+  });
+  
+  // Newsletter form
+  const newsletterForm = document.getElementById('newsletter-form');
+  
+  newsletterForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(newsletterForm as HTMLFormElement);
+    const email = formData.get('email');
+    
+    console.log('Newsletter subscription:', email);
+    
+    alert(document.querySelector('[data-newsletter-success]')?.textContent || 'Thank you for subscribing to our newsletter!');
+    (newsletterForm as HTMLFormElement).reset();
+  });
+</script>

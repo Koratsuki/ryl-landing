@@ -1,0 +1,74 @@
+---
+// Language Switcher Component
+import { languages } from '../i18n/utils';
+
+interface Props {
+  currentLang: string;
+}
+
+const { currentLang } = Astro.props;
+const otherLang = currentLang === 'en' ? 'es' : 'en';
+const otherLangPath = currentLang === 'en' ? '/es/' : '/';
+---
+
+<div class="language-switcher">
+  <a href={otherLangPath} class="lang-toggle" aria-label={`Switch to ${languages[otherLang as keyof typeof languages]}`}>
+    <span class="lang-icon">{currentLang === 'en' ? '🇺🇸' : '🇪🇸'}</span>
+    <span class="lang-text">{currentLang.toUpperCase()}</span>
+    <span class="lang-arrow">⇄</span>
+  </a>
+</div>
+
+<style>
+  .language-switcher {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(45, 95, 63, 0.1);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+  }
+  
+  .lang-toggle:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .lang-icon {
+    font-size: 1.2rem;
+  }
+  
+  .lang-text {
+    font-weight: 600;
+  }
+  
+  .lang-arrow {
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .lang-toggle {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+    
+    .lang-text {
+      display: none;
+    }
+  }
+</style>
